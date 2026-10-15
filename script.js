@@ -1,62 +1,6 @@
-const burger = document.getElementById("burger");
-const nav = document.getElementById("nav");
-
-burger?.addEventListener("click", () => {
-  nav?.classList.toggle("open");
-});
-
-document.querySelectorAll("#nav a").forEach((a) => {
-  a.addEventListener("click", () => nav?.classList.remove("open"));
-});
-
-const form = document.getElementById("form");
-
-form?.addEventListener("submit", async (e) => {
-  e.preventDefault();
-
-  const note = document.getElementById("note");
-  const submitButton = form.querySelector('[type="submit"]');
-  const data = new FormData(form);
-
-  const request = {
-    name: String(data.get("name") || "").trim(),
-    contact: String(data.get("contact") || "").trim(),
-    service: String(data.get("service") || "").trim(),
-    message: String(data.get("message") || "").trim()
-  };
-
-  if (!request.name || !request.contact || !request.service) {
-    if (note) note.textContent = "Заповни ім’я, контакт і послугу.";
-    return;
-  }
-
-  if (note) note.textContent = "Надсилаємо заявку…";
-  if (submitButton) submitButton.disabled = true;
-
-  try {
-    const response = await fetch(
-      "https://nova-web-site.netlify.app/.netlify/functions/send-telegram",
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(request)
-      }
-    );
-
-    const result = await response.json();
-
-    if (!response.ok) {
-      throw new Error(result.message || "Не вдалося надіслати заявку.");
-    }
-
-    if (note) note.textContent = "Дякуємо! Заявку надіслано. Скоро зв’яжемося з тобою.";
-    form.reset();
-  } catch (error) {
-    if (note) {
-      note.textContent =
-        error.message || "Помилка надсилання. Спробуй ще раз пізніше.";
-    }
-  } finally {
-    if (submitButton) submitButton.disabled = false;
-  }
-});
+const burger=document.getElementById('burger');
+const nav=document.getElementById('nav');
+if(burger&&nav){burger.addEventListener('click',()=>{const open=nav.classList.toggle('open');burger.setAttribute('aria-expanded',String(open));burger.setAttribute('aria-label',open?'Закрити меню':'Відкрити меню');burger.textContent=open?'×':'☰';});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');burger.setAttribute('aria-expanded','false');burger.textContent='☰';}));}
+document.querySelectorAll('[data-service]').forEach(link=>link.addEventListener('click',()=>{const select=document.getElementById('service');const wanted=link.dataset.service;if(select&&Array.from(select.options).some(o=>o.value===wanted))select.value=wanted;}));
+const form=document.getElementById('form');
+form?.addEventListener('submit',async e=>{e.preventDefault();const note=document.getElementById('note');const button=form.querySelector('[type="submit"]');const d=new FormData(form);const payload={name:String(d.get('name')||'').trim(),contact:String(d.get('contact')||'').trim(),service:String(d.get('service')||'').trim(),message:String(d.get('message')||'').trim()};if(!payload.name||!payload.contact||!payload.service){if(note)note.textContent='Заповніть ім’я, контакт і послугу.';return;}if(note)note.textContent='Надсилаємо заявку…';if(button)button.disabled=true;try{const response=await fetch('https://nova-web-site.netlify.app/.netlify/functions/send-telegram',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});let result={};try{result=await response.json();}catch{throw new Error('Сервер повернув неочікувану відповідь. Спробуйте пізніше.');}if(!response.ok)throw new Error(result.message||'Не вдалося надіслати заявку.');if(note)note.textContent='Дякуємо! Заявку надіслано. Я зв’яжуся з вами після ознайомлення.';form.reset();}catch(err){if(note)note.textContent=err instanceof TypeError?'Не вдалося зв’язатися із сервером. Перевірте інтернет і спробуйте ще раз.':(err.message||'Помилка надсилання. Спробуйте пізніше.');}finally{if(button)button.disabled=false;}});

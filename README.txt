@@ -1,8 +1,5 @@
-NOVA WEB — portfolio website.
-Файли: index.html, style.css, script.js.
-ВАЖЛИВО перед публікацією:
-1. Замініть hello@novaweb.site на свою реальну пошту.
-2. Замініть Telegram-посилання на своє.
-3. У картках робіт замініть href="#" на URL GitHub Pages:
-   SPARTAK, LUMI BEAUTY, PAROCLEAN, NOVA REALTY, FITZONE.
-4. Після цього завантажте index.html, style.css та script.js у GitHub repository і ввімкніть GitHub Pages.
+NOVA WEB — ПОВНИЙ КОМПЛЕКТ САЙТУ
+Усередині: index.html, style.css, script.js, netlify/functions/send-telegram.mjs.
+Публікування: замініть відповідні файли в репозиторії nova-web; збережіть TELEGRAM_BOT_TOKEN тільки в Netlify Environment variables.
+Netlify Functions directory: netlify/functions. Endpoint: https://nova-web-site.netlify.app/.netlify/functions/send-telegram
+Перевірте перед рекламою, що телефон, Telegram та email у index.html актуальні. Ціни стартові; домен, хостинг, платні сервіси й сторонні інтеграції погоджуються окремо.

@@ -1,132 +1,36 @@
 <!doctype html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="NOVA WEB — створення сучасних адаптивних сайтів для бізнесу.">
-  <meta name="theme-color" content="#111111">
-  <title>NOVA WEB — Створення сайтів</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=5">
-  <style>
-    header nav{display:flex;align-items:center;gap:30px}
-    header nav a{display:inline-block;color:#aaa!important;text-decoration:none!important;font:500 12px/1 "DM Sans",Arial,sans-serif}
-    header nav a:hover{color:#fff!important}
-    .work-info .view{white-space:nowrap}
-    .project-note{font-size:12px;line-height:1.5;color:#999;margin-top:8px}
-    @media(max-width:760px){header nav{gap:14px;flex-wrap:wrap}}
-  </style>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="NOVA WEB — сучасні адаптивні сайти для бізнесу: Landing Page, сайти компаній та інтернет-магазини.">
+<meta name="theme-color" content="#101111"><title>NOVA WEB — створення сайтів для бізнесу</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"><script src="script.js" defer></script>
 </head>
 <body>
-<header>
-  <a class="logo" href="#home">NOVA<span>WEB</span></a>
-  <nav id="nav" aria-label="Головна навігація">
-    <a href="#works">Роботи</a><a href="#services">Послуги</a><a href="#about">Про мене</a><a href="#process">Процес</a><a href="#contact">Контакти</a>
-  </nav>
-  <a class="header-btn" href="#contact">Замовити сайт ↗</a>
-  <button id="burger" type="button" aria-label="Відкрити меню" aria-expanded="false">☰</button>
-</header>
-
+<header><a class="logo" href="#home">NOVA<span>WEB</span></a><button id="burger" aria-expanded="false" aria-controls="nav" aria-label="Відкрити меню">☰</button><nav id="nav"><a href="#works">Портфоліо</a><a href="#services">Послуги</a><a href="#process">Етапи</a><a href="#about">Про мене</a><a href="#contact">Контакти</a></nav><a class="header-cta" href="#contact">Обговорити проєкт ↗</a></header>
 <main>
-<section class="hero" id="home">
-  <div class="grid"></div>
-  <div class="hero-copy">
-    <p class="eyebrow"><i></i> WEB DESIGN • DEVELOPMENT</p>
-    <h1>Сайти, які<br><em>працюють</em><br>на бізнес.</h1>
-    <p>Створюю сучасні адаптивні сайти, які допомагають бізнесу виглядати професійно, привертати увагу та отримувати заявки.</p>
-    <div class="actions"><a class="btn" href="#works">Дивитися роботи <b>↓</b></a><a class="ghost" href="#contact">Обговорити проєкт</a></div>
-    <div class="mini"><span><b>100%</b> адаптив</span><span><b>UI/UX</b> структура</span><span><b>SEO</b> база</span></div>
-  </div>
-  <div class="hero-art">
-    <div class="browser"><div class="bar">● ● ● <span>your-business.com</span></div><div class="screen"><small>NOVA / DIGITAL</small><strong>YOUR<br>BRAND.</strong><div></div></div></div>
-    <span class="art-label">SELECTED WORK / 2026</span>
-  </div>
-</section>
-
-<section class="statement">
-  <p class="eyebrow">NOVA WEB / 01</p><h2>Не просто<br>сайт. <em>Інструмент.</em></h2>
-  <p>Продумую дизайн, структуру та шлях користувача так, щоб сайт не просто красиво виглядав, а виконував свою задачу.</p>
-</section>
-
-<section class="section works" id="works">
-  <div class="head"><div><p class="eyebrow">01 — ПОРТФОЛІО</p><h2>Мої <em>роботи</em></h2></div><p>Сайти й навчальні проєкти для різних ніш. Відкрийте роботу, щоб переглянути сайт або матеріали проєкту.</p></div>
-  <div class="work-grid">
-    <article class="work">
-      <div class="work-img sport"><span>SPORT / 01</span><b>SPARTAK</b></div>
-      <div class="work-info"><div><h3>SPARTAK</h3><p>Спортивний клуб • адаптивний сайт</p></div><a href="https://nadiaskripetc-eng.github.io/spartak-site/" class="view" target="_blank" rel="noopener noreferrer">Відкрити сайт ↗</a></div>
-    </article>
-    <article class="work">
-      <div class="work-img beauty"><span>BEAUTY / 02</span><b>LUMI<br>BEAUTY</b></div>
-      <div class="work-info"><div><h3>LUMI BEAUTY</h3><p>Салон краси • сайт-візитка</p></div><a href="https://nadiaskripetc-eng.github.io/beauty-salon/" class="view" target="_blank" rel="noopener noreferrer">Відкрити сайт ↗</a></div>
-    </article>
-    <article class="work">
-      <div class="work-img realty"><span>HOTEL / 03</span><b>LUXE<br>HOTEL</b></div>
-      <div class="work-info"><div><h3>LUXE HOTEL</h3><p>Бутик-готель • презентаційний сайт</p></div><a href="https://nadiaskripetc-eng.github.io/LUXE-HOTEL/" class="view" target="_blank" rel="noopener noreferrer">Відкрити проєкт ↗</a></div>
-      <p class="project-note">Посилання веде до репозиторію GitHub. Після публікації GitHub Pages його можна замінити на адресу сайту.</p>
-    </article>
-    <article class="work">
-      <div class="work-img fit"><span>RESTAURANT / 04</span><b>MONO<br>RESTAURANT</b></div>
-      <div class="work-info"><div><h3>MONO RESTAURANT</h3><p>Ресторан • сайт закладу</p></div><a href="https://nadiaskripetc-eng.github.io/MONO-RESTAURANT/" class="view" target="_blank" rel="noopener noreferrer">Відкрити проєкт ↗</a></div>
-      <p class="project-note">Посилання веде до репозиторію GitHub. Після публікації GitHub Pages його можна замінити на адресу сайту.</p>
-    </article>
-  </div>
-</section>
-
-<section class="section services" id="services">
-  <div class="head"><div><p class="eyebrow">02 — ПОСЛУГИ</p><h2>Сайт під<br><em>вашу задачу.</em></h2></div><p>Ціни стартові — остаточна вартість залежить від структури, дизайну та потрібних функцій.</p></div>
-  <div class="service-list">
-    <div><span>01</span><h3>Сайт-візитка</h3><p>Стильна презентація компанії, експерта або послуг.</p><strong>від 3 500 грн</strong><a href="#contact">Замовити →</a></div>
-    <div><span>02</span><h3>Landing Page</h3><p>Односторінковий сайт для реклами та отримання заявок.</p><strong>від 5 000 грн</strong><a href="#contact">Замовити →</a></div>
-    <div><span>03</span><h3>Сайт для бізнесу</h3><p>Повноцінний сайт компанії з продуманою структурою.</p><strong>від 7 500 грн</strong><a href="#contact">Замовити →</a></div>
-    <div><span>04</span><h3>Інтернет-магазин</h3><p>Каталог, товари, кошик та оформлення замовлення.</p><strong>від 10 000 грн</strong><a href="#contact">Замовити →</a></div>
-  </div>
-</section>
-
-<section class="packages">
-  <div class="head"><div><p class="eyebrow">ПАКЕТИ</p><h2>Оберіть<br><em>свій формат.</em></h2></div></div>
-  <div class="package-grid">
-    <article><small>START</small><h3>3 500 грн</h3><p>Для невеликого бізнесу або експерта.</p><ul><li>1 сторінка</li><li>Адаптив</li><li>Форма заявки</li><li>Базове SEO</li></ul><a href="#contact">Замовити</a></article>
-    <article class="featured"><small>BUSINESS</small><h3>7 500 грн</h3><p>Для компанії, бренду або послуг.</p><ul><li>До 5 сторінок</li><li>Унікальний дизайн</li><li>Адаптив + анімації</li><li>Форми та контакти</li></ul><a href="#contact">Замовити</a></article>
-    <article><small>PRO</small><h3>від 10 000 грн</h3><p>Для магазину або складнішого проєкту.</p><ul><li>Каталог / товари</li><li>Кошик</li><li>Форми замовлення</li><li>Індивідуальні функції</li></ul><a href="#contact">Замовити</a></article>
-  </div>
-</section>
-
-<section class="section about" id="about">
-  <div><p class="eyebrow">03 — ПРО МЕНЕ</p><h2>Ваш бізнес<br>заслуговує на<br><em>сильний сайт.</em></h2></div>
-  <div class="about-copy"><p>Створюю сайти з фокусом на сучасний вигляд, зрозумілу структуру та комфорт користувача.</p><p>Розвиваю навички HTML, CSS, JavaScript, WordPress та адаптивної верстки. Перед публікацією перевіряю основні сторінки й елементи.</p><div class="skills"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>WordPress</span><span>Responsive</span><span>UI/UX</span></div></div>
-</section>
-
-<section class="section process" id="process">
-  <div class="head"><div><p class="eyebrow">04 — ПРОЦЕС</p><h2>Від ідеї<br>до <em>запуску.</em></h2></div></div>
-  <div class="process-grid">
-    <div><b>01</b><h3>Бриф</h3><p>Визначаємо цілі, аудиторію та необхідні функції.</p></div>
-    <div><b>02</b><h3>Структура</h3><p>Плануємо блоки та логіку майбутнього сайту.</p></div>
-    <div><b>03</b><h3>Дизайн</h3><p>Підбираємо стиль, який відповідає бренду.</p></div>
-    <div><b>04</b><h3>Розробка</h3><p>Створюємо сторінки, функції та адаптивну версію.</p></div>
-    <div><b>05</b><h3>Тест</h3><p>Перевіряємо посилання, форми та мобільну версію.</p></div>
-    <div><b>06</b><h3>Запуск</h3><p>Публікуємо сайт і передаємо його замовнику.</p></div>
-  </div>
-</section>
-
-<section class="cta"><p class="eyebrow">05 — ЗАМОВЛЕННЯ</p><h2>Пора показати<br>ваш бізнес <em>професійно.</em></h2><a class="btn light" href="#contact">Обговорити проєкт ↗</a></section>
-
-<section class="section contact" id="contact">
-  <div><p class="eyebrow">06 — КОНТАКТИ</p><h2>Є ідея?<br><em>Поговорімо.</em></h2><p>Опишіть задачу в кількох словах. Зв’яжіться зі мною, щоб обговорити формат сайту.</p>
-    <div class="contact-links"><a href="tel:+380663526785">066 352 67 85</a><a href="https://t.me/0663526785" target="_blank" rel="noopener noreferrer">Telegram →</a><a href="mailto:hello@novaweb.site">hello@novaweb.site</a></div>
-    <p class="project-note">Перед рекламою перевірте, що номер, Telegram та електронна пошта актуальні.</p>
-  </div>
-  <form id="form">
-    <label>ІМ’Я<input required name="name" placeholder="Ваше ім’я" autocomplete="name"></label>
-    <label>КОНТАКТ<input required name="contact" placeholder="Телефон або Telegram"></label>
-    <label>ПОСЛУГА<select name="service"><option>Сайт-візитка</option><option>Landing Page</option><option>Сайт для бізнесу</option><option>Інтернет-магазин</option><option>Інше</option></select></label>
-    <label>ПОВІДОМЛЕННЯ<textarea name="message" placeholder="Розкажіть про ваш проєкт…"></textarea></label>
-    <button class="btn" type="submit">НАДІСЛАТИ ЗАЯВКУ ↗</button><small id="note" aria-live="polite"></small>
-  </form>
-</section>
-</main>
-<footer><a class="logo" href="#home">NOVA<span>WEB</span></a><p>© 2026 NOVA WEB • Web Design & Development</p><a href="#home">↑ На початок</a></footer>
-<script src="script.js"></script>
-</body>
-</html>
+<section class="hero" id="home"><div class="grid"></div><div class="hero-copy"><p class="eyebrow">✳ ВЕБСАЙТИ ДЛЯ БІЗНЕСУ · УКРАЇНА</p><h1>Ваш бізнес.<br>Ваш стиль.<br><em>Ваш сайт.</em></h1><p class="lead">Створюю сучасні адаптивні сайти, які презентують ваш бренд, пояснюють цінність послуг і допомагають клієнтам зробити наступний крок.</p><div class="actions"><a class="btn light" href="#contact">Обговорити проєкт ↗</a><a class="btn outline" href="#works">Переглянути роботи ↓</a></div><div class="facts"><span><b>01</b> Продумана структура</span><span><b>02</b> Мобільна адаптація</span><span><b>03</b> Базове SEO</span></div></div><div class="hero-art"><div class="browser"><div class="browser-top">● ● ● <span>your-brand.com</span></div><div class="mock"><small>DESIGNED TO MAKE AN IMPRESSION</small><strong>Make your<br><i>next move.</i></strong><div class="orb"></div><footer>STRATEGY / DESIGN / WEB</footer></div></div><p class="art-caption">NOVA WEB / SELECTED DIGITAL WORK</p></div></section>
+<section class="statement"><p class="eyebrow">NOVA WEB / ПІДХІД</p><h2>Не просто сайт.<br><em>Інструмент для розвитку.</em></h2><p>Продуманий дизайн, зрозуміла структура та зручний шлях користувача допомагають перетворити відвідування на дію.</p></section>
+<section class="section" id="works"><div class="section-head"><div><p class="eyebrow">01 — ПОРТФОЛІО</p><h2>Вибрані <em>проєкти</em></h2></div><p>Авторські та навчальні роботи для різних напрямів бізнесу. Відкрийте сайт, щоб переглянути результат.</p></div><div class="projects">
+<article><a class="project sport" href="https://nadiaskripetc-eng.github.io/spartak-site/" target="_blank" rel="noopener"><small>SPORT / 01</small><strong>SPARTAK</strong><span>↗</span></a><h3>SPARTAK <a href="https://nadiaskripetc-eng.github.io/spartak-site/" target="_blank" rel="noopener">Переглянути ↗</a></h3><p>Спортивний клуб · адаптивний сайт</p></article>
+<article><a class="project beauty" href="https://nadiaskripetc-eng.github.io/beauty-salon/" target="_blank" rel="noopener"><small>BEAUTY / 02</small><strong>LUMI<br>BEAUTY</strong><span>↗</span></a><h3>LUMI BEAUTY <a href="https://nadiaskripetc-eng.github.io/beauty-salon/" target="_blank" rel="noopener">Переглянути ↗</a></h3><p>Салон краси · сайт-візитка</p></article>
+<article><a class="project hotel" href="https://nadiaskripetc-eng.github.io/LUXE-HOTEL/" target="_blank" rel="noopener"><small>HOTEL / 03</small><strong>LUXE<br>HOTEL</strong><span>↗</span></a><h3>LUXE HOTEL <a href="https://nadiaskripetc-eng.github.io/LUXE-HOTEL/" target="_blank" rel="noopener">Переглянути ↗</a></h3><p>Готель · презентаційний сайт</p></article>
+<article><a class="project restaurant" href="https://nadiaskripetc-eng.github.io/MONO-RESTAURANT/" target="_blank" rel="noopener"><small>FOOD / 04</small><strong>MONO<br>RESTAURANT</strong><span>↗</span></a><h3>MONO RESTAURANT <a href="https://nadiaskripetc-eng.github.io/MONO-RESTAURANT/" target="_blank" rel="noopener">Переглянути ↗</a></h3><p>Ресторан · сайт закладу</p></article></div><p class="note">Портфоліо містить авторські та навчальні проєкти. Наявність окремих функцій залежить від конкретного сайту.</p></section>
+<section class="section services" id="services"><div class="section-head"><div><p class="eyebrow">02 — ПОСЛУГИ</p><h2>Рішення під<br><em>вашу задачу.</em></h2></div><p>Стартові ціни. Точний обсяг, строки й вартість погоджуємо до початку робіт.</p></div><div class="service-list">
+<div><small>01</small><h3>Сайт-візитка</h3><p>Презентація експерта, майстра або невеликої компанії.</p><b>від 3 000 ₴</b><a href="#contact" data-service="Сайт-візитка">Обговорити ↗</a></div>
+<div><small>02</small><h3>Landing Page</h3><p>Односторінковий сайт для реклами та отримання заявок.</p><b>від 4 500 ₴</b><a href="#contact" data-service="Landing Page">Обговорити ↗</a></div>
+<div><small>03</small><h3>Сайт для бізнесу</h3><p>До кількох сторінок для компанії, студії або бренду.</p><b>від 6 500 ₴</b><a href="#contact" data-service="Сайт для бізнесу">Обговорити ↗</a></div>
+<div><small>04</small><h3>Інтернет-магазин</h3><p>Каталог, картки товарів і оформлення замовлення.</p><b>від 12 000 ₴</b><a href="#contact" data-service="Інтернет-магазин">Обговорити ↗</a></div></div><p class="note">Домен, хостинг, платні плагіни, онлайн-оплата, доставка та сторонні інтеграції оплачуються окремо, якщо інше не погоджено.</p></section>
+<section class="packages"><div class="section-head"><div><p class="eyebrow">03 — ПАКЕТИ</p><h2>Прозорий <em>бюджет.</em></h2></div><p>Оберіть стартовий формат — наповнення та додаткові функції узгодимо окремо.</p></div><div class="package-grid">
+<article><small>START / ПРЕЗЕНТАЦІЯ</small><h3>3 000 ₴</h3><p>Для експерта або невеликого бізнесу.</p><ul><li>Одна сторінка</li><li>Адаптивна версія</li><li>Послуги та контакти</li><li>Кнопки зв’язку</li><li>Базові SEO-метадані</li></ul><a href="#contact" data-service="Сайт-візитка">Обрати START ↗</a></article>
+<article class="featured"><small>LANDING / ЗАЯВКИ · РЕКОМЕНДОВАНО</small><h3>4 500 ₴</h3><p>Для послуги, товару або рекламної кампанії.</p><ul><li>Структура під цільову дію</li><li>До 7 змістових блоків</li><li>Адаптивна версія</li><li>Форма заявки</li><li>Базові SEO-метадані</li></ul><a href="#contact" data-service="Landing Page">Обрати LANDING ↗</a></article>
+<article><small>BUSINESS / КОМПАНІЯ</small><h3>6 500 ₴</h3><p>Для компанії з кількома напрямами роботи.</p><ul><li>До 5 сторінок</li><li>Єдиний візуальний стиль</li><li>Адаптивна версія</li><li>Контактна форма</li><li>Базова SEO-підготовка</li></ul><a href="#contact" data-service="Сайт для бізнесу">Обрати BUSINESS ↗</a></article></div><p class="note">Інтернет-магазини та складні інтеграції оцінюються індивідуально.</p></section>
+<section class="section about" id="about"><div><p class="eyebrow">04 — ПРО МЕНЕ</p><h2>Уважність до деталей.<br><em>Фокус на вашій цілі.</em></h2></div><div><p class="about-lead">Створюю сайти для людей і бізнесів, яким важливо професійно представити себе в інтернеті.</p><p>Поєдную візуальну подачу, зрозумілу структуру та адаптацію для смартфонів. Перед запуском перевіряю основні посилання, форми й відображення сторінок.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>WordPress</span><span>Responsive Design</span><span>UI/UX basics</span></div><p class="note">Обсяг робіт, строки, вартість і технічні обмеження узгоджуються відкрито до старту.</p></div></section>
+<section class="section process" id="process"><div class="section-head"><div><p class="eyebrow">05 — ЕТАПИ РОБОТИ</p><h2>Від ідеї<br><em>до запуску.</em></h2></div><p>Ви розумієте, що відбувається на кожному етапі та що входить у погоджену вартість.</p></div><div class="steps"><article><b>01</b><h3>Знайомство</h3><p>Обговорюємо бізнес, аудиторію та ціль сайту.</p></article><article><b>02</b><h3>План</h3><p>Узгоджуємо структуру, функції, строки та бюджет.</p></article><article><b>03</b><h3>Дизайн</h3><p>Добираємо візуальний стиль під вашу нішу.</p></article><article><b>04</b><h3>Розробка</h3><p>Створюємо сторінки й погоджені функції.</p></article><article><b>05</b><h3>Перевірка</h3><p>Тестуємо адаптивність, посилання та форму.</p></article><article><b>06</b><h3>Запуск</h3><p>Публікуємо сайт і передаємо посилання.</p></article></div></section>
+<section class="cta"><p class="eyebrow">ВАША ІДЕЯ — НАСТУПНИЙ ПРОЄКТ</p><h2>Розкажіть про задум.<br><em>Знайдемо рішення.</em></h2><a class="btn dark" href="#contact">Обговорити сайт ↗</a></section>
+<section class="section contact" id="contact"><div><p class="eyebrow">06 — КОНТАКТИ</p><h2>Почнімо<br><em>з розмови.</em></h2><p>Заповніть форму — заявка надійде в Telegram. Я ознайомлюся із задачею та відповім щодо наступних кроків.</p><div class="contact-links"><a href="tel:+380663526785"><small>ТЕЛЕФОН</small>+380 66 352 67 85 ↗</a><a href="https://t.me/0663526785" target="_blank" rel="noopener"><small>TELEGRAM</small>Написати в Telegram ↗</a><a href="mailto:hello@novaweb.site"><small>EMAIL</small>hello@novaweb.site ↗</a></div><p class="note">Перед рекламою перевірте, що телефон, Telegram та email — актуальні й доступні клієнтам.</p></div>
+<form id="form"><label for="name">ВАШЕ ІМ’Я<input id="name" name="name" autocomplete="name" placeholder="Як до вас звертатися?" maxlength="100" required></label><label for="contact-field">ТЕЛЕФОН АБО TELEGRAM<input id="contact-field" name="contact" placeholder="@username або номер телефону" maxlength="150" required></label><label for="service">ЩО ПОТРІБНО ЗРОБИТИ?<select id="service" name="service" required><option value="Сайт-візитка">Сайт-візитка — від 3 000 ₴</option><option value="Landing Page" selected>Landing Page — від 4 500 ₴</option><option value="Сайт для бізнесу">Сайт для бізнесу — від 6 500 ₴</option><option value="Інтернет-магазин">Інтернет-магазин — від 12 000 ₴</option><option value="Інше">Потрібна консультація / інше</option></select></label><label for="message">КОРОТКО ПРО ПРОЄКТ<textarea id="message" name="message" rows="4" maxlength="1500" placeholder="Ніша, задача, бажані функції…"></textarea></label><button class="btn light submit" type="submit">НАДІСЛАТИ ЗАЯВКУ ↗</button><p id="note" class="form-note" role="status" aria-live="polite"></p><small class="privacy">Контактні дані використовуються, щоб відповісти на ваш запит.</small></form></section>
+</main><footer><a class="logo" href="#home">NOVA<span>WEB</span></a><p>© 2026 NOVA WEB · Створення сайтів</p><a href="#home">На початок ↑</a></footer>
+</body></html>
